@@ -78,6 +78,8 @@ cd astconfman
 virtualenv env
 source env/bin/activate
 pip2 install -r requirements.txt
+or
+pip2 install --trusted-host pypi.org --trusted-host pypi.python.org  -r requirements.txt 
 mv env/lib/python2.7/site-packages/asterisk/ env/lib/python2.7/site-packages/asterisk2/
 ```
 The above will download and install all runtime requirements.
